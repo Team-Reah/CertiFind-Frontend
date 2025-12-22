@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f23459afe330c343daabd14e69448e0c408614341eb9f26672ee31a00b872d51
-size 830
+# Git LFS tracking for common large binary files
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.svg filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.gz filter=lfs diff=lfs merge=lfs -text
+
+# Explicitly disable LFS for source code and text-based files
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+*.css text
+*.md text
+*.json text
+*.yml text
+*.yaml text
